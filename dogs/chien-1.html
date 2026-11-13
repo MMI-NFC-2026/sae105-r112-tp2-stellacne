@@ -1,13 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>chien 1</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chien 1</title>
+  <link rel="stylesheet" href="../src/css/styles.css">
 </head>
+
 <body>
-         <h1>chien 1</h1>
-    <img src="public\img\dogs\A_front_view_of_the_face_of_the_boxer_dog_breed.jpg" alt="chien-1">
-    
+  <header class="header">
+
+    <!-- Menu principal -->
+    <!-- Bouton qui ouvre le menu -->
+    <button class="burger" type="button" popovertarget="menu" aria-label="Ouvrir le menu">
+      🍔
+    </button>
+
+    <nav class="menu" id="menu" popover aria-label="Menu principal">
+      <!-- Bouton qui ferme le menu (il reçoit le focus à l'ouverture) -->
+      <button class="menu__close burger burger--close" popovertarget="menu" popovertargetaction="hide" type="button" aria-label="Fermer le menu" autofocus>
+        🍔
+      </button>
+      <ul class="menu__list">
+        <li class="menu__item"><a class="menu__link" href="../cats/chat-1.html">Chat 1</a></li>
+        <li class="menu__item"><a class="menu__link" href="../cats/chat-2.html">Chat 2</a></li>
+        <li class="menu__item"><a class="menu__link" href="chien-1.html">Chien 1</a></li>
+        <li class="menu__item"><a class="menu__link" href="chien-2.html">Chien 2</a></li>
+      </ul>
+    </nav>
+    <!-- Fin du menu principal -->
+  </header>
+
+  <!-- Contenu principal de la page -->
+  <main>
+    <h1>Chien 1</h1>
+    <img src="../public/img/dogs/A_front_view_of_the_face_of_the_boxer_dog_breed.jpg" alt="Le visage d'un boxer, vu de face">
+  </main>
+  <!-- Fin du contenu principal -->
+
 </body>
+
 </html>
